@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,36 +10,10 @@
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
 
-  <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center px-4 py-4">
-      <h1 class="text-4xl font-bold text-rose-500"><i class="bi bi-instagram"></i></h1>
-      <input type="text" placeholder="Search" class="bg-gray-100 px-3 py-3 rounded-full text-sm focus:outline-none" />
-      <div class="flex items-center space-x-4">
-        <button class="text-2xl"><i class="bi bi-house"></i></button>
-        <button class="text-2xl"><i class="bi bi-heart-fill text-rose-500"></i></button>
-        <button class="text-2xl"><i class="bi bi-plus-circle"></i></button>
-        <img src="https://i.pravatar.cc/40" alt="Profile" class="w-8 h-8 rounded-full">
-      </div>
-    </div>
-  </header>
 
 
-  <header class="bg-white shadow-md top-0 z-50">
-    <div class="container mx-auto flex  justify-between items-center px-a py-4 ">
-      <h1 class="text-4xl font-bold text-rose-500">
-        hello
-      </h1>
-      <input type="text" placeholder="search" class="bg-gray-100 px-3 py-3 rounded-full text-sm focus:outline-none">
-      <div class="flex items-center space-x-4">
-        <button>Login</button>
-        <button>Signup</button>
-        <button>new button</button>
-      </div>
+{%include 'header.html'%}
 
-    </div>
-
-  </header>
 
   <!-- Main content -->
   <main class="container mx-auto px-4 flex justify-between mt-6">
@@ -48,10 +23,10 @@
       <!-- Post -->
       <div class="bg-white border rounded-lg shadow-sm">
         <div class="flex items-center p-3">
-          <img src="P Sheulder.png" alt="User" class="w-10 h-10 rounded-full mr-3">
+          <img src="{%static 'images/P Sheulder.png' %}" alt="User" class="w-10 h-10 rounded-full mr-3">
           <span class="font-bold">P Sheulder</span>
         </div>
-        <img src="P Sheulder.png" class="w-full" alt="Post">
+        <img src="{%static 'images/P Sheulder.png' %}" class="w-full" alt="Post">
         <div class="px-4 py-2">
           <div class="flex space-x-4 text-xl">
             <button><i class="bi bi-heart-fill text-rose-500"></i>1.1k</button>

@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>InstaClone - Sign Up</title>
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-  <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
+</head>
+{%include 'header.html'%}
+<body class="bg-gray-100">
+<div class="flex items-center justify-center min-h-screen">
+ <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
     <h1 class="text-center text-3xl font-bold text-pink-500 mb-6">InstaClone</h1>
     
     <form class="space-y-4">
@@ -21,9 +24,11 @@
 
     <p class="mt-6 text-sm text-center">
       Have an account?
-      <a href="login.html" class="text-pink-500 font-semibold hover:underline">Log in</a>
+      <a href="/login" class="text-pink-500 font-semibold hover:underline">Log in</a>
     </p>
   </div>
+</div>
+ 
 
 </body>
 </html>
